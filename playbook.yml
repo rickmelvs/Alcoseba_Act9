@@ -1,0 +1,10 @@
+---
+- hosts: ubuntu
+  become: yes
+  roles:
+    - Prometheus_ubuntu
+
+- hosts: centos
+  become: yes
+  roles:
+    - Prometheus_centos
